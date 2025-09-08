@@ -1,0 +1,15 @@
+<RCC>
+	<qresource prefix="/">
+        	<file>Resources/images/splashscreen.png</file>
+        	<file>Resources/images/logo.png</file>
+        	<file>Resources/images/logo_white_bg.png</file>
+       		<file>Resources/icons/backup.png</file>
+        	<file>Resources/icons/box_icon.ico</file>
+        	<file>Resources/icons/exit.png</file>
+        	<file>Resources/icons/help.png</file>
+        	<file>Resources/icons/info.png</file>
+        	<file>Resources/icons/restore.png</file>
+        	<file>Resources/icons/server_icon.ico</file>
+        	<file>Resources/icons/xml.png</file>
+	</qresource>
+</RCC>
