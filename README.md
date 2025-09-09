@@ -1,7 +1,7 @@
 # Containers (Qt6 C++ Project)
 
-<img width="807" height="637" alt="image" src="https://github.com/user-attachments/assets/3b8f242e-5b8d-4ea5-8f6e-24dad148d11d" />
-
+<img width="809" height="640" alt="image" src="https://github.com/user-attachments/assets/3e549617-05e2-48fc-ae53-dda432b5f914" />
+<img width="811" height="640" alt="image" src="https://github.com/user-attachments/assets/1f70d992-e434-4244-bbd4-38e17a0ef7bf" />
 
 ## Overview
 **Containers** is a desktop application built with **Qt6 (C++)** for managing and visualizing containers and pallets.  
