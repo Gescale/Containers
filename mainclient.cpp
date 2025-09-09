@@ -24,7 +24,6 @@ MainClient::MainClient(QWidget *parent)
     connect(_actHelp, &QAction::triggered, this, &MainClient::showHelp);
     connect(_actExit, &QAction::triggered, this, &QWidget::close);
 
-    // Connecting actions to container slots
     connect(_actBackup, &QAction::triggered, _containerWidget, &ContainerWidget::backupState);
     connect(_actRestore, &QAction::triggered, _containerWidget, &ContainerWidget::restoreState);
     connect(_actPostXML, &QAction::triggered, _containerWidget, &ContainerWidget::postXml);
@@ -50,13 +49,13 @@ void MainClient::showHelp() {
 }
 
 void MainClient::setupActions() {
-    _actBackup = new QAction(QIcon(":/resources/backup.png"), "&Backup Unallocated", this);
+    _actBackup = new QAction(QIcon(":/Resources/icons/backup.png"), "&Backup Unallocated", this);
     _actBackup->setToolTip("Backup the list of unallocated containers");
 
-    _actRestore = new QAction(QIcon(":/resources/restore.png"), "&Restore Unallocated", this);
+    _actRestore = new QAction(QIcon(":/Resources/icons/restore.png"), "&Restore Unallocated", this);
     _actRestore->setToolTip("Restore the list of unallocated containers");
 
-    _actPostXML = new QAction(QIcon(":/resources/save.png"), "&Post Pallets to Server", this);
+    _actPostXML = new QAction(QIcon(":/Resources/icons/server_icon.ico"), "&Post Pallets to Server", this);
     _actPostXML->setToolTip("Generate XML from pallets and send to server");
 
     auto questionIcon = style()->standardIcon(QStyle::SP_MessageBoxQuestion);
@@ -64,7 +63,7 @@ void MainClient::setupActions() {
 
     _actAbout = new QAction(infoIcon, "About", this);
     _actHelp = new QAction(questionIcon, "Help", this);
-    _actExit = new QAction(QIcon(":/resources/exit.png"), "E&xit", this);
+    _actExit = new QAction(QIcon(":/Resources/icons/exit.png"), "E&xit", this);
 }
 
 void MainClient::setupMenus() {

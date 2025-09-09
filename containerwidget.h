@@ -36,7 +36,6 @@ private:
     void resetInputs();
     void updateUnallocatedList();
 
-    // UI Elements
     QSpinBox *_boxBreadth, *_boxLength, *_boxHeight, *_boxWeight;
     QSpinBox *_cylinderDiameter, *_cylinderHeight, *_cylinderWeight;
     QPushButton *_buttonAddBox, *_buttonAddCylinder;
@@ -46,7 +45,6 @@ private:
     QPushButton *_buttonPostXML;
     QTextEdit *_displayPalletXML;
 
-    // Data
     QList<Container*> _unallocatedContainers;
     QMap<int, Pallet*> _pallets;
     ContainerFactory* _factory;

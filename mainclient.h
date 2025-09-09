@@ -28,7 +28,6 @@ private:
 
     ContainerWidget* _containerWidget;
 
-    // Actions
     QAction *_actBackup;
     QAction *_actRestore;
     QAction *_actPostXML;
@@ -36,13 +35,11 @@ private:
     QAction *_actHelp;
     QAction *_actExit;
 
-    // Menus
     QMenu *_mnuFile;
     QMenu *_mnuBackup;
     QMenu *_mnuPost;
     QMenu *_mnuHelp;
 
-    // Toolbar
     QToolBar *_toolbar;
 };
 

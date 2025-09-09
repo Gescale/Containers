@@ -4,7 +4,6 @@
 #include <QList>
 #include <QVariantMap>
 
-// The Memento contains the state of an object to be restored.
 class Memento {
 public:
     explicit Memento(const QList<QVariantMap>& state);
@@ -14,7 +13,6 @@ private:
     const QList<QVariantMap> _state;
 };
 
-// The Caretaker is responsible for the memento's safekeeping.
 class Caretaker {
 public:
     Caretaker();

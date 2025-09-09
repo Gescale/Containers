@@ -190,7 +190,6 @@ void ContainerWidget::resetInputs() {
 }
 
 void ContainerWidget::setupUi() {
-    // UI elements setup (similar to provided template)
     _boxBreadth = new QSpinBox(); _boxLength = new QSpinBox(); _boxHeight = new QSpinBox(); _boxWeight = new QSpinBox();
     _cylinderDiameter = new QSpinBox(); _cylinderHeight = new QSpinBox(); _cylinderWeight = new QSpinBox();
     _buttonAddBox = new QPushButton("Add box");
@@ -205,13 +204,11 @@ void ContainerWidget::setupUi() {
     _displayPalletXML->setReadOnly(true);
     _displayPalletXML->setFontFamily("Courier");
 
-    // Set sensible ranges
     _boxBreadth->setRange(1, 100); _boxLength->setRange(1, 100); _boxHeight->setRange(1, 100); _boxWeight->setRange(1, 1000);
     _cylinderDiameter->setRange(1, 100); _cylinderHeight->setRange(1, 100); _cylinderWeight->setRange(1, 1000);
     _palletNumber->setMinimum(1);
     _buttonRestore->setEnabled(false);
 
-    // Tab 1 - Containers
     QGroupBox *boxGroup = new QGroupBox("Box");
     QGridLayout *boxlayout = new QGridLayout(boxGroup);
     boxlayout->addWidget(new QLabel("Breadth"), 0, 0); boxlayout->addWidget(_boxBreadth, 0, 1);
@@ -250,18 +247,15 @@ void ContainerWidget::setupUi() {
     tabLayoutContainer->addWidget(cylinderGroup, 0, 1);
     tabLayoutContainer->addWidget(bottomWidget, 1, 0, 1, 2);
 
-    // Tab 2 - Post XML
     QWidget *postWidget = new QWidget;
     QVBoxLayout *postLayout = new QVBoxLayout(postWidget);
     postLayout->addWidget(_buttonPostXML);
     postLayout->addWidget(_displayPalletXML);
 
-    // Tab setup
     QTabWidget *tabWidget = new QTabWidget;
     tabWidget->addTab(containerWidget, "Containers");
     tabWidget->addTab(postWidget, "Post XML");
 
-    // Main layout
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(tabWidget);
 }

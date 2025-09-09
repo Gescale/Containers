@@ -11,7 +11,6 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Network Xml)
 
 set(app_icon_resource_windows "${CMAKE_CURRENT_SOURCE_DIR}/resources/icons/logo.png")
 
-# Client Application
 qt_add_executable(Containers
     main.cpp
     mainclient.h

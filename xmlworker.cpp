@@ -59,12 +59,12 @@ QString XmlWorker::generateXmlString(const QMap<int, Pallet*>& pallets) {
                 writer.writeTextElement(name, value.toString());
             }
 
-            writer.writeEndElement(); // Box or Cylinder
+            writer.writeEndElement();
         }
-        writer.writeEndElement(); // pallet
+        writer.writeEndElement();
     }
 
-    writer.writeEndElement(); // pallets
+    writer.writeEndElement();
     writer.writeEndDocument();
 
     return xmlString;
